@@ -1,6 +1,7 @@
 const express = require('express')
 const statisticsRouter = express.Router()
 const {getLocation} = require('../router_handler/statistics_handler')
+
 statisticsRouter.get('/location',async (req,res)=>{
      const {geoCoordMap,data} = await getLocation()
      res.json({

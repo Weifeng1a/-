@@ -34,5 +34,5 @@ app.use('/api',projectRouter)
 
 
 app.listen(80,()=>{
-    console.log('server open in http://127.0.0.1');
+    console.log('服务器已经开启');
 })

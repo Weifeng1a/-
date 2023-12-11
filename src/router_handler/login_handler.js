@@ -1,11 +1,10 @@
 //登录路由的处理函数
-
 const {initModels} = require('../model/init-models')
 const {user,role} = initModels()
 const {generateToken} = require('../utils/authorization')
 
 //登录业务,登录成功返回token和该用户的信息
-const login =async (user_account,user_password)=>{
+const login = async (user_account,user_password)=>{
    const msgObj = {
       code:0,
       msg:'登录成功！',
@@ -42,5 +41,5 @@ const login =async (user_account,user_password)=>{
 
 
 module.exports={
-    login
+   login
 }

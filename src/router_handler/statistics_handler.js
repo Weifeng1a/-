@@ -1,7 +1,6 @@
 const {initModels} = require('../model/init-models')
 const Sequelize = require('sequelize')
 const { Op } = require('sequelize')
-const { get } = require('../router/statistics')
 const {poverty,village,location} = initModels()
 
 //统计各个导致贫困原因的人数
